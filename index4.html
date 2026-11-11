@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Інформаційна система школи</title>
+
+    <link rel="stylesheet" href="style4.css">
+    <script src="script4.js" defer></script>
+</head>
+<body>
+
+    <h1>Інформаційна система школи</h1>
+
+    <!-- Вкладки -->
+    <div class="tabs">
+        <button class="tab active" data-table="students">
+            Учні
+        </button>
+
+        <button class="tab" data-table="teachers">
+            Учителі
+        </button>
+
+        <button class="tab" data-table="subjects">
+            Предмети
+        </button>
+    </div>
+
+    <!-- Таблиця учнів -->
+    <section id="students" class="table-section active">
+
+        <h2>Список учнів</h2>
+
+        <button type="button" class="add-button">
+            Додати учня
+        </button>
+
+        <div class="form-container"></div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Прізвище</th>
+                    <th>Ім'я</th>
+                    <th>Дата народження</th>
+                    <th>Клас</th>
+                    <th>Email</th>
+                    <th>Середній бал</th>
+                    <th>Дії</th>
+                </tr>
+            </thead>
+
+            <tbody id="studentsBody">
+                <tr>
+                    <td>1</td>
+                    <td>Петренко</td>
+                    <td>Андрій</td>
+                    <td>2010-05-15</td>
+                    <td>10-А</td>
+                    <td>andrii@example.com</td>
+                    <td>10.5</td>
+                    <td>
+                        <button class="delete-button" type="button">✖</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Коваленко</td>
+                    <td>Марія</td>
+                    <td>2010-08-20</td>
+                    <td>10-А</td>
+                    <td>maria@example.com</td>
+                    <td>11.2</td>
+                    <td>
+                        <button class="delete-button" type="button">✖</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+
+    <!-- Таблиця вчителів -->
+    <section id="teachers" class="table-section">
+
+        <h2>Список учителів</h2>
+
+        <button type="button" class="add-button">
+            Додати вчителя
+        </button>
+
+        <div class="form-container"></div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Прізвище</th>
+                    <th>Ім'я</th>
+                    <th>Предмет</th>
+                    <th>Категорія</th>
+                    <th>Стаж</th>
+                    <th>Email</th>
+                    <th>Дії</th>
+                </tr>
+            </thead>
+
+            <tbody id="teachersBody">
+                <tr>
+                    <td>1</td>
+                    <td>Іваненко</td>
+                    <td>Олена</td>
+                    <td>Інформатика</td>
+                    <td>Вища</td>
+                    <td>15</td>
+                    <td>olena@example.com</td>
+                    <td>
+                        <button class="delete-button" type="button">✖</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Шевченко</td>
+                    <td>Петро</td>
+                    <td>Математика</td>
+                    <td>Перша</td>
+                    <td>10</td>
+                    <td>petro@example.com</td>
+                    <td>
+                        <button class="delete-button" type="button">✖</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+
+    <!-- Таблиця навчальних предметів -->
+    <section id="subjects" class="table-section">
+
+        <h2>Навчальні предмети</h2>
+
+        <button type="button" class="add-button">
+            Додати предмет
+        </button>
+
+        <div class="form-container"></div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Назва предмета</th>
+                    <th>Годин на тиждень</th>
+                    <th>Кабінет</th>
+                    <th>Клас</th>
+                    <th>ID учителя</th>
+                    <th>Тип оцінювання</th>
+                    <th>Дії</th>
+                </tr>
+            </thead>
+
+            <tbody id="subjectsBody">
+                <tr>
+                    <td>1</td>
+                    <td>Інформатика</td>
+                    <td>2</td>
+                    <td>25</td>
+                    <td>10-А</td>
+                    <td>1</td>
+                    <td>12-бальна шкала</td>
+                    <td>
+                        <button class="delete-button" type="button">✖</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Математика</td>
+                    <td>5</td>
+                    <td>18</td>
+                    <td>10-А</td>
+                    <td>2</td>
+                    <td>12-бальна шкала</td>
+                    <td>
+                        <button class="delete-button" type="button">✖</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+
+</body>
+</html>
